@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Notas y Tareas</string>
+    <string name="notes">Notas y Tareas</string>
+    <string name="notes_title">Titulo</string>
+    <string name="notes_sub_title">Sub Titulo</string>
+    <string name="notes_desc">Escribe tu nota</string>
+    <string name="web_url">Ingresa tu Url</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancelar</string>
+    <string name="storage_permission_text">Se necesitan permisos para acceder.</string>
+    <string name="search">Buscar...</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
