@@ -69,7 +69,7 @@ class FragmentoCrearNotas : FragmentoBase(),EasyPermissions.PermissionCallbacks,
             launch {
                 context?.let {
                     var notes = NotesDatabase.getDatabase(it).noteDao().getSpecificNote(noteId)
-                    colorView.setBackgroundColor(Color.parseColor(notes.color))
+
                     etNoteTitle.setText(notes.title)
                     etNoteSubTitle.setText(notes.subTitle)
                     etNoteDesc.setText(notes.noteText)
@@ -173,7 +173,6 @@ class FragmentoCrearNotas : FragmentoBase(),EasyPermissions.PermissionCallbacks,
                 notes.subTitle = etNoteSubTitle.text.toString()
                 notes.noteText = etNoteDesc.text.toString()
                 notes.dateTime = currentDate
-                notes.color = selectedColor
                 notes.imgPath = selectedImagePath
                 notes.webLink = webLink
 
@@ -196,7 +195,6 @@ class FragmentoCrearNotas : FragmentoBase(),EasyPermissions.PermissionCallbacks,
             notes.subTitle = etNoteSubTitle.text.toString()
             notes.noteText = etNoteDesc.text.toString()
             notes.dateTime = currentDate
-            notes.color = selectedColor
             notes.imgPath = selectedImagePath
             notes.webLink = webLink
             context?.let {
